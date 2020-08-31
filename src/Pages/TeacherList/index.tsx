@@ -1,8 +1,8 @@
 import React from 'react';
 import PageHeader from '../../components/PageHeader';
-import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
 import './styles.css';
+import TeacherItem from '../../components/TeacherItem';
 
 function TeacherList(){
     return (
@@ -24,30 +24,10 @@ function TeacherList(){
                 </form>
             </PageHeader>
             <main>
-                <article className="teacher-item">
-                    <header>
-                        <img src="https://avatars2.githubusercontent.com/u/186284?s=460&v=4" alt="JAnderson"></img>
-                        <div>
-                            <strong>Janderson Ferreira</strong>
-                            <span>Quimica</span>
-                        </div>
-                    </header>
-                    <p>
-                        Entuasiasta de empreendedorismo
-                        <br/>
-                        Apaixonado por novas tecnologias, twiter e mercado financeiro
-
-                    </p>
-                    <footer>
-                        <p>
-                            Preco/hora
-                            <strong>R$ 500,00</strong>
-                        </p>
-                        <button type="button"> 
-                        <img src={whatsappIcon} alt="Whatapps"/>
-                        </button>
-                    </footer>
-                </article>
+                <TeacherItem/>
+                <TeacherItem/>
+                <TeacherItem/>
+                <TeacherItem/>
             </main>
         </div>
     )
